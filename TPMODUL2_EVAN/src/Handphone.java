@@ -7,30 +7,10 @@ public class Handphone extends Perangkat{
 
     }
 
-    public String getDrive(){
-        return super.getDrive();
-    }
-
-    public float getProcessor(){
-        return super.getProcessor();
-    }
-
-    public int getRam(){
-        return super.getRam();
-    }
-
-    public boolean getFingerprint(){
-        return this.fingerprint;
-    }
-
-
-    public void setFingerprint(boolean fingerprint){
-        this.fingerprint = fingerprint;
-    }
 
     public void informasi(){
-        System.out.print("Handphone ini memiliki drive tipe " + getDrive() + " dengan ram sebesar " + getRam() +" GB dan processor secepat " + getProcessor() + " Ghz" );
-        if (getFingerprint()){
+        System.out.print("Handphone ini memiliki drive tipe " + drive + " dengan ram sebesar " + ram +" GB dan processor secepat " + processor + " Ghz" );
+        if (fingerprint){
             System.out.print(". Selain itu handphone ini juga memiliki Fingerprint");
         } else {
             System.out.print(". Selain itu handphone ini TIDAK memiliki Fingerprint");

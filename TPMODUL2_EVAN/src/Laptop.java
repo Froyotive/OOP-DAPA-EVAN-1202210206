@@ -7,26 +7,10 @@ public class Laptop extends Perangkat {
         this.webcam = webcam;
     }
 
-    public String getDrive(){
-        return super.getDrive();
-    }
-
-    public float getProcessor(){
-        return super.getProcessor();
-    }
-
-    public int getRam(){
-        return super.getRam();
-    }
-
-    public boolean getWebcam(){
-        return this.webcam;
-    }
-
 
     public void informasi(){
-        System.out.print("Laptop ini memiliki drive tipe " + getDrive() + " dengan ram sebesar " + getRam() + " GB dan processor secepat " + getProcessor() + " Ghz");
-        if (getWebcam()){
+        System.out.print("Laptop ini memiliki drive tipe " + drive + " dengan ram sebesar " + ram + " GB dan processor secepat " + processor + " Ghz");
+        if (webcam){
             System.out.print(". Selain itu laptop ini juga memiliki Webcam");
         }else{
             System.out.print(". Selain itu laptop ini TIDAK memiliki Webcam");

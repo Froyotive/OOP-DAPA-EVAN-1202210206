@@ -5,17 +5,6 @@ public class Perangkat {
 
 
 
-    public String getDrive(){
-        return this.drive;
-    }
-
-    public int getRam(){
-        return this.ram;
-    }
-    
-    public float getProcessor(){
-        return this.processor;
-    }
 
     public Perangkat(String drive, int ram, float processor){
         this.drive = drive;
@@ -24,6 +13,6 @@ public class Perangkat {
     }
 
     public void informasi(){
-        System.out.println("Perangkat tidak diketahui memiliki drive tipe " + getDrive() + " dengan ram sebesar " + getRam() + " GB dan processor secepat " + getProcessor() + " Ghz");
+        System.out.println("Perangkat tidak diketahui memiliki drive tipe " + drive + " dengan ram sebesar " + ram + " GB dan processor secepat " + processor + " Ghz");
     }
 }
